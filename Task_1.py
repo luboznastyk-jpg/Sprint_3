@@ -92,11 +92,3 @@ class OnlineSalesRegisterCollector:
             raise ValueError('Необходимо ввести 10 цифр после "+7"')
         else:
            return f'+7{telephone_number}'
-
-
-register = OnlineSalesRegisterCollector()
-
-register.add_item_to_cheque('кола')     
-register.add_item_to_cheque('молоко')  
-register.check_amount()
-register.total_tax()   
